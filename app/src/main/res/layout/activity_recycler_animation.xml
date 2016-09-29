@@ -7,13 +7,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:id="@+id/recyclerlayout"
-    tools:context="com.kimhyojung.android.basiclistview.RecyclerActivity">
+    tools:context="com.kimhyojung.android.basiclistview.RecyclerAnimationActivity">
+
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:color="#cccccccc">
 
     </android.support.v7.widget.RecyclerView>
 

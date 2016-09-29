@@ -6,5 +6,6 @@ package com.kimhyojung.android.basiclistview;
 public class RecyclerData {
     String title;
     String name;
+    String date;
     int image;
 }

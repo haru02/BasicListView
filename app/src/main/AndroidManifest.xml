@@ -21,7 +21,9 @@
         <activity android:name=".BasicGridActivity" />
         <activity android:name=".CustomGridActivity" />
         <activity android:name=".ExpandableActivity" />
-        <activity android:name=".RecyclerActivity"></activity>
+        <activity android:name=".RecyclerActivity" />
+        <activity android:name=".Recycler_Detail_Activity" />
+        <activity android:name=".RecyclerCardActivity"></activity>
     </application>
 
 </manifest>

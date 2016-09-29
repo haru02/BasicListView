@@ -9,12 +9,15 @@ import java.util.ArrayList;
 
 public class RecyclerActivity extends AppCompatActivity {
 
+    public static ArrayList<RecyclerData> datas = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler);
 
-        ArrayList<RecyclerData> datas = new ArrayList<>();
+        datas = new ArrayList<>();
+
         for(int i=0;i<100;i++){
             RecyclerData data = new RecyclerData();
 
@@ -25,7 +28,7 @@ public class RecyclerActivity extends AppCompatActivity {
         }
 
         RecyclerView listView = (RecyclerView) findViewById(R.id.recyclerView);
-        RecyclerAdapter adapter = new RecyclerAdapter(datas, R.layout.activity_recycler_item);
+        RecyclerAdapter adapter = new RecyclerAdapter(datas, R.layout.activity_recycler_item, this);
         listView.setAdapter(adapter);
         listView.setLayoutManager(new LinearLayoutManager(this));
     }

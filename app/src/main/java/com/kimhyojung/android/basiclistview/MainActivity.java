@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btn5;
     Button btn6;
     Button btn7;
+    Button btn8;
+    Button btn9;
 
 
     @Override
@@ -29,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn5 = (Button) findViewById(R.id.button5);
         btn6 = (Button) findViewById(R.id.button6);
         btn7 = (Button) findViewById(R.id.button7);
+        btn8 = (Button) findViewById(R.id.button8);
+        btn9 = (Button) findViewById(R.id.button9);
 
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
@@ -37,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn5.setOnClickListener(this);
         btn6.setOnClickListener(this);
         btn7.setOnClickListener(this);
+        btn8.setOnClickListener(this);
+        btn9.setOnClickListener(this);
 
     }
 
@@ -64,6 +70,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button7:
                 intent = new Intent(this, RecyclerActivity.class);
+                break;
+            case R.id.button9:
+                intent = new Intent(this, RecyclerCardActivity.class);
                 break;
         }
         startActivity(intent);
